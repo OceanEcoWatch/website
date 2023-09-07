@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@zugriff/adapter-sveltekit';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { SassAlias } from 'svelte-preprocess-sass-alias-import';
 import path from 'path';
