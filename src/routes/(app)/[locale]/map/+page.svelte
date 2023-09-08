@@ -7,7 +7,7 @@
 	import type { PageData } from './$types';
 	import Legend from '$lib/components/Legend.svelte';
 	import { myCustomTheme } from '../../../../theme';
-	import { RangeSlider } from '@skeletonlabs/skeleton';
+	import { RangeSlider, type PopupSettings, popup } from '@skeletonlabs/skeleton';
 	import { blur } from 'svelte/transition';
 
 	export let data: PageData;
@@ -37,6 +37,12 @@
 
 		return outputString;
 	}
+
+	const popupClick: PopupSettings = {
+		event: 'click',
+		target: 'popupClick',
+		placement: 'top'
+	};
 
 	onMount(async () => {
 		interactive = true;
@@ -157,6 +163,15 @@
 		});
 	});
 </script>
+
+<div class="card p-4 variant-filled-primary z-10" data-popup="popupClick">
+	<p>Click Content</p>
+	<div class="arrow variant-filled-primary" />
+</div>
+
+<div class="absolute bottom-0 right-30 z-10">
+	<button class="btn variant-filled" use:popup={popupClick}>Click</button>
+</div>
 
 <div class="absolute bottom-0 right-0 z-10" in:blur={{ delay: 500, duration: 400 }}>
 	<Legend />
