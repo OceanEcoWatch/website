@@ -7,10 +7,14 @@
 	import type { PageData } from './$types';
 	import Legend from '$lib/components/Legend.svelte';
 	import { myCustomTheme } from '../../../../theme';
+	import { RangeSlider } from '@skeletonlabs/skeleton';
 	import { blur } from 'svelte/transition';
 
 	export let data: PageData;
 	const geoJson = data.geoJson.testData as GeoJSON.FeatureCollection;
+
+	let dateIndex: number = 0;
+	let dates: string[] = ['8. Sep', '12. Aug', '1. Aug', '20. Jun', '14. Jul'];
 
 	let center: [number, number] = [0, 0];
 	let interactive: boolean;
@@ -154,10 +158,16 @@
 	});
 </script>
 
-<!-- <Legend /> -->
-
 <div class="absolute bottom-0 right-0 z-10" in:blur={{ delay: 500, duration: 400 }}>
 	<Legend />
+</div>
+
+<div
+	class="absolute top-0 z-10 w-screen flex flex-col items-center"
+	in:blur={{ delay: 500, duration: 400 }}
+>
+	<h1 class="text-white">{dates[dateIndex]}</h1>
+	<RangeSlider name="range-slider" bind:value={dateIndex} max={4} step={1} />
 </div>
 
 <div class="relative h-full" in:blur={{ delay: 500, duration: 400 }}>
