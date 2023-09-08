@@ -1,4 +1,4 @@
-<div class="w-[90px] bg-black z-10">
+<div class="w-[90px] bg-white z-10">
 	<ul class="list">
 		<li>
 			<span><div class="w-[30px] aspect-square bg-primary-100" /></span>
