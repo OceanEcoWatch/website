@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { testData } from './testData';
+import { testData } from './map/testData';
 
 export const load: PageServerLoad = async ({}) => {
 	//api call here in the future

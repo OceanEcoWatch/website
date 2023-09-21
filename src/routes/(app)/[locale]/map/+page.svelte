@@ -7,7 +7,7 @@
 	import type { PageData } from './$types';
 	import Legend from '$lib/components/Legend.svelte';
 	import { myCustomTheme } from '../../../../theme';
-	import { RangeSlider, type PopupSettings, popup } from '@skeletonlabs/skeleton';
+	//import { RangeSlider, type PopupSettings, popup } from '@skeletonlabs/skeleton';
 	import { blur } from 'svelte/transition';
 
 	export let data: PageData;
@@ -38,17 +38,19 @@
 		return outputString;
 	}
 
-	const popupClick: PopupSettings = {
-		event: 'click',
-		target: 'popupClick',
-		placement: 'top'
-	};
+	// const popupClick: PopupSettings = {
+	// 	event: 'click',
+	// 	target: 'popupClick',
+	// 	placement: 'top'
+	// };
 
 	onMount(async () => {
 		interactive = true;
 		hash = true;
 
-		mapboxgl.accessToken = env.PUBLIC_MAPBOX_TOKEN;
+		//mapboxgl.accessToken = env.PUBLIC_MAPBOX_TOKEN;
+		mapboxgl.accessToken =
+			'pk.eyJ1IjoiY3lwaGVyLWFkbWluIiwiYSI6ImNsamZ1OGo2NjA0anczcXRnbWI5ancyYm8ifQ.n7YJMwH9EdAWX90He87j-w';
 		map = new mapboxgl.Map({
 			container: 'map',
 			//@ts-ignore
@@ -89,23 +91,23 @@
 						0,
 						'rgba(33,102,172,0)',
 						1,
-						convertToRGB(myCustomTheme.properties['--color-primary-100']),
+						convertToRGB(myCustomTheme.properties['--color-error-100']),
 						18,
-						convertToRGB(myCustomTheme.properties['--color-primary-200']),
+						convertToRGB(myCustomTheme.properties['--color-error-200']),
 						24,
-						convertToRGB(myCustomTheme.properties['--color-primary-300']),
+						convertToRGB(myCustomTheme.properties['--color-error-300']),
 						32,
-						convertToRGB(myCustomTheme.properties['--color-primary-400']),
+						convertToRGB(myCustomTheme.properties['--color-error-400']),
 						40,
-						convertToRGB(myCustomTheme.properties['--color-primary-500']),
+						convertToRGB(myCustomTheme.properties['--color-error-500']),
 						48,
-						convertToRGB(myCustomTheme.properties['--color-primary-600']),
+						convertToRGB(myCustomTheme.properties['--color-error-600']),
 						56,
-						convertToRGB(myCustomTheme.properties['--color-primary-700']),
+						convertToRGB(myCustomTheme.properties['--color-error-700']),
 						64,
-						convertToRGB(myCustomTheme.properties['--color-primary-800']),
+						convertToRGB(myCustomTheme.properties['--color-error-800']),
 						72,
-						convertToRGB(myCustomTheme.properties['--color-primary-900'])
+						convertToRGB(myCustomTheme.properties['--color-error-900'])
 					],
 					// Adjust the heatmap radius by zoom level
 					'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 2, 9, 20],
@@ -119,6 +121,7 @@
 				type: 'circle',
 				source: 'plastic',
 				minzoom: 7,
+
 				paint: {
 					// Size circle radius by earthquake magnitude and zoom level
 					'circle-radius': [
@@ -137,23 +140,23 @@
 						0,
 						'rgba(33,102,172,0)',
 						1,
-						convertToRGB(myCustomTheme.properties['--color-primary-100']),
+						convertToRGB(myCustomTheme.properties['--color-error-100']),
 						18,
-						convertToRGB(myCustomTheme.properties['--color-primary-200']),
+						convertToRGB(myCustomTheme.properties['--color-error-200']),
 						24,
-						convertToRGB(myCustomTheme.properties['--color-primary-300']),
+						convertToRGB(myCustomTheme.properties['--color-error-300']),
 						32,
-						convertToRGB(myCustomTheme.properties['--color-primary-400']),
+						convertToRGB(myCustomTheme.properties['--color-error-400']),
 						40,
-						convertToRGB(myCustomTheme.properties['--color-primary-500']),
+						convertToRGB(myCustomTheme.properties['--color-error-500']),
 						48,
-						convertToRGB(myCustomTheme.properties['--color-primary-600']),
+						convertToRGB(myCustomTheme.properties['--color-error-600']),
 						56,
-						convertToRGB(myCustomTheme.properties['--color-primary-700']),
+						convertToRGB(myCustomTheme.properties['--color-error-700']),
 						64,
-						convertToRGB(myCustomTheme.properties['--color-primary-800']),
+						convertToRGB(myCustomTheme.properties['--color-error-800']),
 						72,
-						convertToRGB(myCustomTheme.properties['--color-primary-900'])
+						convertToRGB(myCustomTheme.properties['--color-error-900'])
 					],
 					'circle-stroke-color': 'white',
 					'circle-stroke-width': 1,
@@ -164,26 +167,26 @@
 	});
 </script>
 
-<div class="card p-4 variant-filled-primary z-10" data-popup="popupClick">
+<!-- <div class="card p-4 variant-filled-error z-10" data-popup="popupClick">
 	<p>Click Content</p>
-	<div class="arrow variant-filled-primary" />
+	<div class="arrow variant-filled-error" />
 </div>
 
 <div class="absolute bottom-0 right-30 z-10">
 	<button class="btn variant-filled" use:popup={popupClick}>Click</button>
-</div>
+</div> -->
 
 <div class="absolute bottom-0 right-0 z-10" in:blur={{ delay: 500, duration: 400 }}>
 	<Legend />
 </div>
 
-<div
+<!-- <div
 	class="absolute top-0 z-10 w-screen flex flex-col items-center"
 	in:blur={{ delay: 500, duration: 400 }}
 >
 	<h1 class="text-white">{dates[dateIndex]}</h1>
 	<RangeSlider name="range-slider" bind:value={dateIndex} max={4} step={1} />
-</div>
+</div> -->
 
 <div class="relative h-full" in:blur={{ delay: 500, duration: 400 }}>
 	<div class="h-full" id="map" bind:this={mapContainer} />

@@ -6,13 +6,15 @@
 	import { onMount } from 'svelte';
 	import LL from '$i18n/i18n-svelte';
 	import { goto } from '$app/navigation';
-	import { blur } from 'svelte/transition';
+	import Map from './Map.svelte';
 
+	let prototypeView: boolean = false;
 	let mapContainer: HTMLDivElement;
 	let map: mapboxgl.Map;
 
 	onMount(() => {
-		mapboxgl.accessToken = env.PUBLIC_MAPBOX_TOKEN;
+		mapboxgl.accessToken =
+			'pk.eyJ1IjoiY3lwaGVyLWFkbWluIiwiYSI6ImNsamZ1OGo2NjA0anczcXRnbWI5ancyYm8ifQ.n7YJMwH9EdAWX90He87j-w';
 		map = new mapboxgl.Map({
 			container: 'map',
 			//@ts-ignore
@@ -74,25 +76,30 @@
 			speed: 1,
 			curve: 1
 		});
-
 		map.on('moveend', () => {
 			goto('/map');
 		});
 	}
 </script>
 
-<div class="relative h-full">
-	<div class="h-full" id="map" bind:this={mapContainer} />
-</div>
+<div class="relative w-screen h-screen flex flex-col items-center">
+	{#if !prototypeView}
+		<div class="absolute top-20 text-center text-white z-10">
+			<h1 class="text-white text-3xl mb-5">Mapping the Plastic Threat</h1>
+			<p>
+				Leveraging satellite imagery for real-time insights, closing the marine pollution data gap
+			</p>
+		</div>
+	{/if}
+	<!-- <div class="h-full w-full" id="map" bind:this={mapContainer} /> -->
 
-<div class="absolute top-20 w-screen">
-	<h1 class="text-white text-center">{$LL.HI()}</h1>
-</div>
+	<Map />
 
-<div class="absolute bottom-20 text-white w-screen flex flex-col items-center">
-	<p>mission statement</p>
-
-	<button class="btn variant-filled-primary" on:click={handleCheckoutPrototypeButton}
-		>check out the prototype</button
-	>
+	{#if !prototypeView}
+		<div class="absolute bottom-20 text-white w-screen flex flex-col items-center">
+			<button class="btn bg-white" on:click={handleCheckoutPrototypeButton}>
+				<h1 class="text-4xl text-primary-500 font-bold">PROTOTYPE</h1>
+			</button>
+		</div>
+	{/if}
 </div>
