@@ -8,7 +8,6 @@
 	import { goto } from '$app/navigation';
 	import Map from './Map.svelte';
 
-	let prototypeView: boolean = false;
 	let mapContainer: HTMLDivElement;
 	let map: mapboxgl.Map;
 
@@ -82,24 +81,20 @@
 	}
 </script>
 
-<div class="relative w-screen h-screen flex flex-col items-center">
-	{#if !prototypeView}
-		<div class="absolute top-20 text-center text-white z-10">
-			<h1 class="text-white text-3xl mb-5">Mapping the Plastic Threat</h1>
-			<p>
-				Leveraging satellite imagery for real-time insights, closing the marine pollution data gap
-			</p>
-		</div>
-	{/if}
-	<!-- <div class="h-full w-full" id="map" bind:this={mapContainer} /> -->
+<div class="relative w-full h-screen flex flex-col items-center">
+	<div class="absolute top-10 text-center text-white z-10">
+		<h1 class="text-primary-500 font-bold text-5xl mb-5">Mapping the Plastic Threat</h1>
+		<p class="text-white">
+			Leveraging satellite imagery for real-time insights, closing the marine pollution data gap
+		</p>
+	</div>
 
 	<Map />
 
-	{#if !prototypeView}
-		<div class="absolute bottom-20 text-white w-screen flex flex-col items-center">
-			<button class="btn bg-white" on:click={handleCheckoutPrototypeButton}>
-				<h1 class="text-4xl text-primary-500 font-bold">PROTOTYPE</h1>
-			</button>
-		</div>
-	{/if}
+	<div class="absolute bottom-10 text-white w-full flex flex-col items-center">
+		<button class="btn bg-white" on:click={handleCheckoutPrototypeButton}>
+			<h1 class="text-4xl text-primary-500 font-bold">View Protoype</h1>
+		</button>
+		<p class="animate-bounce mt-5">or start scrolling</p>
+	</div>
 </div>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import arrowBackIcon from '$assets/arrowBack.svg';
 	import { onMount } from 'svelte';
 	import mapboxgl from 'mapbox-gl';
 	import 'mapbox-gl/dist/mapbox-gl.css';
@@ -9,6 +10,7 @@
 	import { myCustomTheme } from '../../../../theme';
 	//import { RangeSlider, type PopupSettings, popup } from '@skeletonlabs/skeleton';
 	import { blur } from 'svelte/transition';
+	import { goto } from '$app/navigation';
 
 	export let data: PageData;
 	const geoJson = data.geoJson.testData as GeoJSON.FeatureCollection;
@@ -187,6 +189,12 @@
 	<h1 class="text-white">{dates[dateIndex]}</h1>
 	<RangeSlider name="range-slider" bind:value={dateIndex} max={4} step={1} />
 </div> -->
+
+<div class="absolute top-2 left-2 z-10" in:blur={{ delay: 500, duration: 400 }}>
+	<button class="btn-icon bg-white" on:click={() => goto('/')}
+		><img alt="arrow back icon" src={arrowBackIcon} /></button
+	>
+</div>
 
 <div class="relative h-full" in:blur={{ delay: 500, duration: 400 }}>
 	<div class="h-full" id="map" bind:this={mapContainer} />
