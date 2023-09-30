@@ -1,26 +1,21 @@
 <script lang="ts">
-	import Plastic from '$lib/components/Plastic.svelte';
-	import Action from '$lib/components/Action.svelte';
-	import Contact from '$lib/components/Contact.svelte';
-	import Hero from '$lib/components/Hero.svelte';
-	import Team from '$lib/components/Team.svelte';
-	import Technology from '$lib/components/Technology.svelte';
-	import WaveDivider from '$lib/components/WaveDivider.svelte';
+	import Hero from '$lib/sections/Hero.svelte';
+	import Problem from '$lib/sections/Problem.svelte';
+	import Prototype from '$lib/sections/Prototype.svelte';
+	import Technology from '$lib/sections/Technology.svelte';
+	import Roadmap from '$lib/sections/Roadmap.svelte';
+	import Audience from '$lib/sections/Audience.svelte';
+	import Team from '$lib/sections/Team.svelte';
+	import Contact from '$lib/sections/Contact.svelte';
 </script>
 
-<div class="max-w-full">
+<div class="w-full max-w-screen hide-scrollbar">
 	<Hero />
-	<Plastic />
-	<WaveDivider type={'white-blue'} />
+	<Problem />
+	<Prototype />
 	<Technology />
-	<WaveDivider type={'blue-white'} />
-	<Action />
-	<WaveDivider type={'white-blue'} />
-	<Contact />
-	<WaveDivider type={'blue-white'} />
+	<Roadmap />
+	<Audience />
 	<Team />
-</div>
-
-<div class="flex flex-col items-center mt-20">
-	<a class="anchor" href="/impressum"><p>impressum & datanschutz</p></a>
+	<Contact />
 </div>

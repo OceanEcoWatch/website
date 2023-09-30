@@ -2,6 +2,7 @@
 	import '../../app.postcss';
 
 	import type { LayoutData } from './$types';
+	import { blur, fly } from 'svelte/transition';
 
 	import { setLocale } from '$i18n/i18n-svelte';
 	import { loadLocale } from '$i18n/i18n-util.sync';
@@ -12,7 +13,6 @@
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
 	export let data: LayoutData;
-
 	loadLocale(data.locale);
 	setLocale(data.locale);
 </script>

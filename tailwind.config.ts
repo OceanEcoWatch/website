@@ -21,7 +21,21 @@ export default {
 			lg: { min: '1024px', max: '10000px' }
 			// => @media (min-width: 1024px and max-width: 1279px) { ... }
 		},
-		extend: {}
+
+		extend: {
+			colors: {
+				'pollution-100': '#FFF323',
+				'pollution-200': '#FFE81F',
+				'pollution-300': '#FFDB0C',
+				'pollution-400': '#FFB800',
+				'pollution-500': '#FE9400',
+				'pollution-600': '#FD7104',
+				'pollution-700': '#FC4E09',
+				'pollution-800': '#FB2B0F',
+				'pollution-900': '#F90716',
+				'team-card': '#1A1F21'
+			}
+		}
 	},
 	plugins: [
 		forms,
