@@ -32,7 +32,7 @@
                 <img src={section.icon} alt={section.altText} />
             </div>
             <div class="w-[380px] sm:w-[250px]">
-                <h1 class="text-4xl text-center text-white py-3" style="font-weight: 500">{section.title}</h1>
+                <h1 class="text-3xl text-center text-white py-3" style="font-weight: 500">{section.title}</h1>
                 <p class="text-center mt-5 text-white">
                     {section.description}
                 </p>

@@ -53,7 +53,7 @@
 
 <div class="bg-white hide-scrollbar flex flex-col items-center py-28 ">
 	<div class="w-full flex flex-col items-center mb-10">
-		<h1 class="text-4xl text-primary-500 pb-20" style="font-weight: 500">SEA THE TEAM</h1>
+		<h1 class="text-3xl text-primary-500 pb-20" style="font-weight: 500">SEA THE TEAM</h1>
 	</div>
 
 	<div class="flex sm:flex-col sm:items-center sm:space-y-10 md:space-x-10 lg:space-x-20 pl-5 pr-5">
