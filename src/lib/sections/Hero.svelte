@@ -1,6 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
-	import earth from '$assets/images/earth.jpeg';
+	import earth from '$assets/images/earth.png';
 </script>
 
 <div class="bg-black p-20 sm:p-10 min-h-screen w-full relative">
@@ -10,7 +10,6 @@
 		alt="globe from space"
 	/>
 	<div class="sm:w-5/6 w-1/2 h-full z-10 relative mt-20 sm:mt-0">
-		<!-- Set z-index to a higher value -->
 		<h1 class="text-5xl sm:text-4xl text-white">MAPPING THE PLASTIC THREAT</h1>
 
 		<div class="w-2/3 h-[4px] bg-secondary-500 mt-20 sm:mt-10" />

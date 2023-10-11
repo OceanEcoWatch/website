@@ -2,13 +2,11 @@
 	import graph from '$assets/images/graph.png';
 </script>
 
-<div class="w-full bg-primary-500 flex sm:flex-col pl-10 pr-10 pt-20 pb-20">
-	<div class="w-1/2 sm:w-full">
-		<img class="" src={graph} alt="graphs showing different refelction patterns of plastic" />
-	</div>
-	<div class="w-1/2 sm:w-full sm:mt-10">
-		<h1 class="text-3xl text-white"  style="font-weight: 500">HOW THE DETECTION WORKS</h1>
-		<p class="mt-10 w-5/6 sm:w-full sm:mt-10 text-white">
+<div class="w-full h-screen bg-primary-500 flex justify-evenly pt-40 pb-40 pl-20 pr-20">
+	<div class="flex flex-col w-2/5 h-full">
+		<h1 class="font-bold text-white text-3xl mb-10">HOW THE DETECTION WORKS</h1>
+
+		<p class="text-white">
 			We primarily leverage Sentinel-2 imagery, accessible through SentinelHub, as our core data
 			source. This resource offers a remarkable spectral resolution, spanning 13 distinct bandwidths
 			from visible to infrared. Our approach is grounded in the latest open-source scientific
@@ -16,5 +14,29 @@
 			models, neural networks, notably the Unet++ model, excel at discerning the unique reflection
 			and absorption patterns of plastic and marine debris in contrast to water.
 		</p>
+	</div>
+	<div>
+		<div class="ml-40">
+			<img
+				src={graph}
+				alt="statistic that shows the increase of plastic in our oceans by year and weight"
+			/>
+			<div class="mt-5">
+				<p class="text-white">
+					Variations in remote sensing reflectance across different materials at various
+					wavelengths.
+				</p>
+				<div class="flex space-x-3">
+					<p class="text-white">Source:</p>
+					<a
+						class="anchor text-white"
+						tabindex="0"
+						href="https://www.nature.com/articles/s41598-020-62298-z"
+					>
+						Finding Plastic Patches in Coastal Waters using Optical Satellite Data
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
