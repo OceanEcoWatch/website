@@ -2,9 +2,9 @@
 	import seaturtle from '$assets/images/seaturtle.png';
 </script>
 
-<div class="w-full bg-primary-500 p-10 pt-28">
-	<div class="flex">
-		<div class="w-1/2">
+<div class="w-full bg-primary-500 p-10 sm:px-5 pt-28">
+	<div class="flex sm:flex-col">
+		<div class="w-1/2 sm:w-full">
 			<h1 class="text-3xl text-white pb-10" style="font-weight: 500">
 				Get our marine debris analysis of any coastal region
 			</h1>
@@ -16,7 +16,7 @@
 			<p class="text-tertiary-500 mt-10" style="font-weight: 500">contact@oceanecowatch.org</p>
 		</div>
 
-		<div class="w-1/2 flex flex-col items-center">
+		<div class="w-1/2 sm:w-full flex flex-col items-center">
 			<img class="" src={seaturtle} alt="a seaturle" />
 		</div>
 	</div>

@@ -4,8 +4,8 @@
 	import statistic from '$assets/images/statistic.png';
 </script>
 
-<div class="w-full h-screen bg-white flex justify-evenly pt-40 pb-40 pl-20 pr-20">
-	<div class="flex flex-col w-2/5 h-full">
+<div class="w-full h-full bg-white flex sm:flex-col sm:px-5 sm:pt-10 pt-40 pb-40 px-20">
+	<div class="flex flex-col w-2/5 sm:w-full h-full">
 		<h1 class="font-bold text-3xl mb-10">ACTIVE MITIGATION</h1>
 
 		<ul class="list flex flex-col space-y-10">
@@ -62,7 +62,7 @@
 		</ul>
 	</div>
 	<div>
-		<div class="ml-40">
+		<div class="ml-40 sm:ml-0 sm:pt-20">
 			<h1 class="font-bold text-3xl mb-10">NUMBER OF MICROPLASTIC PER CUBIC METER (N/m³)</h1>
 			<img
 				src={statistic}

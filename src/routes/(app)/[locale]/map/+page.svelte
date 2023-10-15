@@ -70,17 +70,20 @@
 	}
 
 	onMount(async () => {
+		console.log(env.PUBLIC_MAPBOX_TOKEN);
 		hash = true;
-		//mapboxgl.accessToken = env.PUBLIC_MAPBOX_TOKEN;
+
 		mapboxgl.accessToken =
 			'pk.eyJ1IjoiY3lwaGVyLWFkbWluIiwiYSI6ImNsamZ1OGo2NjA0anczcXRnbWI5ancyYm8ifQ.n7YJMwH9EdAWX90He87j-w';
+
 		map = new mapboxgl.Map({
 			container: 'map',
 			//@ts-ignore
 			projection: 'globe',
 			//style: env.PUBLIC_MAPBOX_STYLE,
 			style: 'mapbox://styles/mapbox/satellite-v9',
-			attributionControl: true,
+			attributionControl: false,
+			logoPosition: 'bottom-left',
 			interactive: true,
 			zoom: 1,
 			center: [0, 0]
@@ -219,7 +222,7 @@
 	});
 </script>
 
-<div class="absolute bottom-5 lg:right-2 sm:w-screen flex flex-col items-center z-10">
+<div class="absolute bottom-5 right-2 flex flex-col items-center z-10">
 	<Legend />
 </div>
 
@@ -237,13 +240,11 @@
 			role="link"
 			tabindex="0"
 			class="anchor font-bold">Ocean Eco Watch</span
-		> <br />
-		The prototype detects marine debris on the coast of Durban located in South Africa where a flood
-		event on the 18th of April in 2019 washed out a lot of plastic. <br />
-		We are using data from the sentinel-2 satellite taken six days post-event. Our prototype highlights
-		potential locations of floating plastic. Each point on the map corresponds to the probability of
-		present marine debris and represents an area spanning 10x10 m². <br />
-		I invite you to explore our prototype.
+		>. The prototype detects marine debris on the coast of Durban located in South Africa where a
+		flood event on the 18th of April in 2019 washed out a lot of plastic. We are using data from the
+		sentinel-2 satellite taken six days post-event. Our prototype highlights potential locations of
+		floating plastic. Each point on the map corresponds to the probability of present marine debris
+		and represents an area spanning 10x10 m².
 	</p>
 	<div class="arrow variant-primary-500" />
 </div>

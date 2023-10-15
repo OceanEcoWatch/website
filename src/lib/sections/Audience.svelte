@@ -28,14 +28,14 @@
 	];
 </script>
 
-<div class="w-full bg-primary-500 pt-20 pb-20 pl-10 pr-10 flex sm:flex-col justify-between">
+<div class="w-full bg-primary-500 pt-20 pb-20 pl-20 pr-20 flex sm:flex-col justify-between">
 	{#each sections as section}
 		<div class="flex flex-col items-center p-5 sm:mb-10">
 			<div class="py-10">
 				<img src={section.icon} alt={section.altText} />
 			</div>
-			<div class="w-[380px] sm:w-[250px]">
-				<h1 class="text-3xl text-center text-white py-3" style="font-weight: 500">
+			<div class="w-[320px] sm:w-[250px]">
+				<h1 class="text-3xl text-center text-tertiary-500 font-bold py-3">
 					{section.title}
 				</h1>
 				<p class="text-center mt-5 text-white">

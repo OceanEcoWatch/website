@@ -11,17 +11,18 @@
 				isSmScreen = true;
 			}
 		}
-		console.log(isSmScreen);
 	});
 </script>
 
 <div class="w-full bg-white p-10 py-28">
-	<h1 class="text-3xl text-primary-500 text-center pb-20"  style="font-weight: 500">WHAT WE ARE WORKING ON</h1>
+	<h1 class="text-3xl text-primary-500 text-center pb-20" style="font-weight: 500">
+		WHAT WE ARE WORKING ON
+	</h1>
 	{#if isSmScreen}
 		<img class="object-cover w-full h-full mt-10" src={roadmapVertical} alt="our roadmap" />
 	{/if}
 
 	{#if !isSmScreen}
-		<img class="object-cover w-full h-full mt-10" src={roadmapHorizontal} alt="our roadmap" />
+		<img class="h-full mt-10 pl-20 pr-20" src={roadmapHorizontal} alt="our roadmap" />
 	{/if}
 </div>

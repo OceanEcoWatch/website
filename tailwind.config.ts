@@ -34,6 +34,11 @@ export default {
 				'pollution-800': '#FB2B0F',
 				'pollution-900': '#F90716',
 				'team-card': '#1A1F21'
+			},
+
+			shadow: {
+				sm: '0 1px 2px var(--tw-shadow-color)',
+				lg: '0 8px 16px var(--tw-shadow-color)'
 			}
 		}
 	},
