@@ -15,7 +15,7 @@
 		<div class="w-2/3 h-[4px] bg-secondary-500 mt-20" />
 
 		<h1 class="text-3xl sm:text-2xl sm:w-2/5 text-secondary-500 mt-20 sm:mt-5">
-			REAL-TIME MAPPING OF PRESENT MARINE DEBRIS BY LEVERAGING SATELLITE IMAGERY
+			REAL-TIME MAPPING OF PRESENT <br />MARINE DEBRIS BY LEVERAGING <br />SATELLITE IMAGERY
 		</h1>
 
 		<button class="btn h-[75px] w-[250px] bg-white mt-20 sm:mt-20" on:click={() => goto('/map')}>
