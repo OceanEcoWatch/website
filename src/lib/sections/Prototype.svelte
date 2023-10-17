@@ -45,7 +45,7 @@
 
 {#if isSmScreen}
 	<div class="h-screen w-full relative">
-		<div class="absolute top-0 left-0 z-50 px-5 pt-20">
+		<div class="absolute top-0 left-0 z-50 px-5 pt-32">
 			<h1 class="text-white text-3xl text-center" style="font-weight: 500">
 				OCEAN ECO WATCH PROTOTYPE
 			</h1>

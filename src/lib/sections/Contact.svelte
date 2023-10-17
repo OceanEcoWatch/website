@@ -2,7 +2,7 @@
 	import seaturtle from '$assets/images/seaturtle.png';
 </script>
 
-<div class="w-full bg-primary-500 p-10 sm:px-5 pt-28">
+<div class="w-full bg-primary-500 p-10 sm:px-5 pt-28 sm:pt-20">
 	<div class="flex sm:flex-col">
 		<div class="w-1/2 sm:w-full">
 			<h1 class="text-3xl text-white pb-10" style="font-weight: 500">

@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="w-full h-screen sm:h-full bg-primary-500 flex sm:flex-col sm:px-5 pt-40 pb-40 pl-20 pr-20"
+	class="w-full h-screen sm:h-full bg-primary-500 flex sm:flex-col sm:px-5 sm:pt-20 pt-40 pb-40 pl-20 pr-20"
 >
 	<div class="flex flex-col w-2/5 sm:w-full h-full">
 		<h1 class="font-bold text-white text-3xl mb-10">HOW THE DETECTION WORKS</h1>
