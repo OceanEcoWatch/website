@@ -18,7 +18,7 @@
 {#if !isSmScreen}
 	<div class="bg-white w-full h-screen relative">
 		<div class="absolute w-1/3 top-40 right-20">
-			<h1 class="text-white text-3xl sm:text-3xl" style="font-weight: 500">
+			<h1 class="text-white text-3xl sm:text-3xl sm:mt-20" style="font-weight: 500">
 				OCEAN ECO WATCH PROTOTYPE
 			</h1>
 			<p class="text-white mt-10">
@@ -28,6 +28,7 @@
 				highlights potential locations of floating plastic. Each point on the map corresponds to the
 				probability of present marine debris and represents an area spanning 10x10 m².
 			</p>
+
 			<button
 				class="btn btn-xl bg-white mt-20"
 				on:click={() => goto('/map')}
