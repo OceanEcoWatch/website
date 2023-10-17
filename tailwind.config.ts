@@ -39,7 +39,10 @@ export default {
 			shadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',
 				lg: '0 8px 16px var(--tw-shadow-color)'
-			}
+			},
+			fontSize: {
+				'lg-p': '1.5rem', // Adjust the font size value as needed
+			  },
 		}
 	},
 	plugins: [
