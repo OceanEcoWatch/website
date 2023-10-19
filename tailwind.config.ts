@@ -42,6 +42,7 @@ export default {
 			},
 			fontSize: {
 				'lg-p': '1.5rem', // Adjust the font size value as needed
+				'small': '0.8rem'
 			  },
 		}
 	},

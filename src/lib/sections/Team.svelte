@@ -51,7 +51,7 @@
 	}
 </script>
 
-<div class="bg-white hide-scrollbar flex flex-col items-center p-20">
+<div class="bg-white hide-scrollbar flex flex-col items-center p-20 sm:px-5">
 	<div class="w-full flex flex-col items-center mb-10">
 		<h1 class="text-3xl text-primary-500 pb-20" style="font-weight: 500">SEA THE TEAM</h1>
 	</div>
@@ -60,25 +60,15 @@
 		{#each teamMembers as member}
 			<div class="flex flex-col">
 				<div class="bg-team-card card w-[250px] h-[250px] relative overflow-hidden">
-					<img
-						class="w-full h-full object-cover"
-						src={member.image}
-						alt={`portrait of ${member.name}`}
-					/>
+					<img class="w-full h-full object-cover" src={member.image} alt={`portrait of ${member.name}`} />
 					<div class="left-4 space-x-2 absolute left-2 bottom-2">
 						{#if member.links.github}
-							<button
-								type="button"
-								class="btn-icon bg-white"
-								on:click={() => redirect(member.links.github)}
+							<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.github)}
 								><img alt="github" src={githubIcon} /></button
 							>
 						{/if}
 						{#if member.links.linkedin}
-							<button
-								type="button"
-								class="btn-icon bg-white"
-								on:click={() => redirect(member.links.linkedin)}
+							<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.linkedin)}
 								><img alt="linkedin" src={linkedinIcon} /></button
 							>
 						{/if}

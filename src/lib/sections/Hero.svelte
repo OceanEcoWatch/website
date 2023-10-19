@@ -5,7 +5,7 @@
 
 <div class="bg-black lg:p-40 sm:p-0 min-h-screen w-full relative flex items-center">
 	<img
-		class="object-cover sm:object-top absolute top-0 left-0 z-0 w-full h-full"
+		class="object-cover sm:object-top absolute top-0 left-0 z-0 w-full h-full sm:brightness-50"
 		src={earth}
 		alt="globe from space"
 	/>
@@ -18,7 +18,11 @@
 			REAL-TIME MAPPING OF PRESENT <br />MARINE DEBRIS BY LEVERAGING <br />SATELLITE IMAGERY
 		</h1>
 
-		<button class="btn h-[90px] w-[320px] sm:btn h-[75px] sm:w-[270px] bg-white mt-20 sm:mt-20" style="border-radius: 28px;" on:click={() => goto('/map')}>
+		<button
+			class="btn h-[90px] w-[320px] sm:btn h-[75px] sm:w-[270px] bg-white mt-20 sm:mt-20"
+			style="border-radius: 28px;"
+			on:click={() => goto('/map')}
+		>
 			<h1 class="text-black text-3xl sm:text-2xl font-bold">VIEW PROTOTYPE</h1>
 		</button>
 	</div>

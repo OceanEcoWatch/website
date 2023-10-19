@@ -4,7 +4,7 @@
 	import statistic from '$assets/images/statistic.png';
 </script>
 
-<div class="w-full h-full bg-white flex sm:flex-col sm:px-5 sm:pt-10 pt-40 pb-40 px-20">
+<div class="w-full h-full bg-white flex sm:flex-col sm:px-5 sm:pt-20 pt-40 pb-40 px-20">
 	<div class="flex flex-col w-2/5 sm:w-full h-full">
 		<div class="pl-24">
 			<h1 class="font-bold text-3xl mb-10">ACTIVE MITIGATION</h1>
@@ -20,7 +20,7 @@
 						</div>
 					</span>
 					<span class="flex-auto">
-						<p class="text-lg-p">
+						<p class="">
 							Shocking as it may be, up to <span class="font-bold">80% of all marine debris consists of plastic</span> an
 							insidious invader of our planet’s most vital habitats.
 						</p>
@@ -34,7 +34,7 @@
 						</div></span
 					>
 					<span class="flex-auto"
-						><p class="text-lg-p">
+						><p class="">
 							Disturbingly, <span class="font-bold"
 								>the bulk of this plastic threat (80%) lies in our coastal zones</span
 							>
@@ -50,7 +50,7 @@
 						</div></span
 					>
 					<span class="flex-auto"
-						><p class="text-lg-p">
+						><p class="">
 							The time for change is now, we want to help cleanup NGOs to make their operations more effective with
 							accurate, real-time data on floating plastic debris in coastal regions, and thus play a small part in the
 							fight against plastic pollution.

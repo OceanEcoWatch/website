@@ -28,7 +28,7 @@
 	];
 </script>
 
-<div class="w-full bg-primary-500 flex flex-col items-center lg:py-32 md:py-48 sm:py-32 md:p-30 sm:px-5">
+<div class="w-full bg-primary-500 flex flex-col items-center lg:py-32 md:py-48 sm:py-24 md:p-30 sm:px-5">
 	<div class="sm:w-full lg:w-4/5 bg-primary-500 pl-20 pr-20 flex sm:flex-col justify-between">
 		{#each sections as section}
 			<div class="flex flex-col items-center p-5 sm:mb-20">
