@@ -17,8 +17,8 @@
 
 {#if !isSmScreen}
 	<div class="bg-white w-full h-full relative">
-		<div class="absolute w-1/2 top-40 right-0 mr-10 absolute top-1/2 transform -translate-y-1/2">
-			<div class="w-3/4">
+		<div class="absolute w-1/2 top-1/2 right-0 mr-10 transform -translate-y-1/2">
+			<div class="w-3/4 max-w-[1500px]">
 				<h1 class="text-white text-3xl sm:text-3xl sm:mt-20" style="font-weight: 500">OCEAN ECO WATCH PROTOTYPE</h1>
 				<p class="text-white mt-10">
 					We've built a small prototype to detect marine debris on the coast of Durban located in South Africa where a
@@ -33,11 +33,13 @@
 				>
 			</div>
 		</div>
-		<img
-			src={prototypeHorizontal}
-			class="max-h-48 max-h-[1000px] object-cover object-left object-bottom w-full h-full"
-			alt="screenshot of our prototype"
-		/>
+		<div class="">
+			<img
+				src={prototypeHorizontal}
+				class="object-cover object-left object-bottom w-full"
+				alt="screenshot of our prototype"
+			/>
+		</div>
 	</div>
 {/if}
 

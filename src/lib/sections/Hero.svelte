@@ -5,7 +5,7 @@
 
 <div class="bg-black lg:p-40 sm:p-0 min-h-screen w-full relative flex items-center">
 	<img
-		class="object-cover sm:object-top absolute top-0 left-0 z-0 w-full h-full sm:brightness-50"
+		class="object-cover sm:object-top absolute top-0 left-0 z-0 w-full h-full sm:brightness-50 md:brightness-50"
 		src={earth}
 		alt="globe from space"
 	/>

@@ -2,26 +2,28 @@
 	import seaturtle from '$assets/images/seaturtle.png';
 </script>
 
-<div class="w-full bg-primary-500 p-10 sm:px-5 pt-28">
-	<div class="flex sm:flex-col">
-		<div class="w-1/2 sm:w-full">
-			<h1 class="text-3xl text-white pb-20 sm:text-center" style="font-weight: 500">
-				Get our marine debris analysis of any coastal region
-			</h1>
-			<p class="text-white mt-5 sm:text-center">
-				Interested in our data? We can provide you with a detailed analysis of any coastal region in the world from 2014
-				to the present.
-			</p>
+<div class="bg-primary-500">
+	<div class="w-full sm:px-5 pt-32 pb-10 mx-auto lg:px-40" style="max-width:3000px">
+		<div class="flex sm:flex-col">
+			<div class="w-1/2 sm:w-full">
+				<h1 class="text-3xl text-white pb-20 sm:text-center" style="font-weight: 500">
+					Get our marine debris analysis of any coastal region
+				</h1>
+				<p class="text-white mt-5 sm:text-center">
+					Interested in our data? We can provide you with a detailed analysis of any coastal region in the world from
+					2014 to the present.
+				</p>
 
-			<p class="text-tertiary-500 mt-20 sm:text-center" style="font-weight: 500">contact@oceanecowatch.org</p>
+				<p class="text-tertiary-500 mt-20 sm:text-center" style="font-weight: 500">contact@oceanecowatch.org</p>
+			</div>
+
+			<div class="w-1/2 sm:w-full flex flex-col items-center mt-10">
+				<img class="" src={seaturtle} alt="a seaturle" />
+			</div>
 		</div>
 
-		<div class="w-1/2 sm:w-full flex flex-col items-center mt-10">
-			<img class="" src={seaturtle} alt="a seaturle" />
+		<div class="flex flex-col items-center mt-20 sm:mt-10">
+			<a class="anchor text-white" href="/impressum"><p class="font-bold">Imprint</p></a>
 		</div>
-	</div>
-
-	<div class="flex flex-col items-center mt-20 sm:mt-10">
-		<a class="anchor text-white" href="/impressum"><p class="font-bold">Imprint</p></a>
 	</div>
 </div>
