@@ -67,20 +67,20 @@
 
 		<div class="graph h-full w-full flex flex-col lg:items-center md:w-4/5 mx-auto">
 			<h1 class="font-bold text-3xl mb-16">NUMBER OF MICROPLASTIC PER CUBIC METER (N/m³)</h1>
-			<img
-				class="w-[500px] md:w-[600px] lg:w-[700px]"
-				src={statistic}
-				alt="statistic that shows the increase of plastic in our oceans by year and weight"
-			/>
-			<div class="mt-5 items-end" style="text-align: left;">
-				<a
-					class="anchor"
-					tabindex="0"
-					href="https://www.iaea.org/newscenter/news/world-oceans-day-2020-new-iaea-research-records-dramatic-increase-in-microplastic-pollution-in-eastern-tropical-pacific-ocean"
-				>
-					Source: Microplastics Abundance in Eastern Tropical Pacific
-				</a>
+			<div>
+				<img
+					class="w-[500px] md:w-[700px] lg:w-[775px] mb-5"
+					src={statistic}
+					alt="statistic that shows the increase of plastic in our oceans by year and weight"
+				/>
 			</div>
+			<a
+				class="anchor items-center md:pl-32"
+				tabindex="0"
+				href="https://www.iaea.org/newscenter/news/world-oceans-day-2020-new-iaea-research-records-dramatic-increase-in-microplastic-pollution-in-eastern-tropical-pacific-ocean"
+			>
+				Source: Microplastics Abundance in Eastern Tropical Pacific
+			</a>
 		</div>
 	</div>
 </div>

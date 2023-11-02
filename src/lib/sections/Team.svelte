@@ -148,7 +148,7 @@
 {/if}
 
 {#if width < 780}
-	<div class="bg-white hide-scrollbar mx-auto py-40 px-10">
+	<div class="bg-white hide-scrollbar mx-auto py-32 px-10">
 		<h1 class="font-bold text-black text-3xl mb-10 text-center pb-20">SEA THE TEAM</h1>
 		<!-- Set max-width to contain 2 items with 300px each and gap -->
 		<!-- Create a 2-column grid with some gap -->

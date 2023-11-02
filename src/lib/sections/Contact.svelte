@@ -6,15 +6,15 @@
 	<div class="w-full sm:px-10 pt-32 pb-10 mx-auto lg:px-40 md:px-20" style="max-width:2500px">
 		<div class="flex sm:flex-col">
 			<div class="w-1/2 sm:w-full">
-				<h1 class="text-3xl text-white pb-20 sm:text-center" style="font-weight: 500">
+				<h1 class="text-3xl text-white pb-20" style="font-weight: 500">
 					Get our marine debris analysis of any coastal region
 				</h1>
-				<p class="text-white mt-5 sm:text-center" style="max-width:1000px">
+				<p class="text-white mt-5" style="max-width:1000px">
 					Interested in our data? We can provide you with a detailed analysis of any coastal region in the world from
 					2014 to the present.
 				</p>
 
-				<p class="text-tertiary-500 mt-20 sm:text-center" style="font-weight: 500">contact@oceanecowatch.org</p>
+				<p class="text-tertiary-500 mt-20" style="font-weight: 500">contact@oceanecowatch.org</p>
 			</div>
 
 			<div class="w-1/2 sm:w-full flex flex-col items-center mt-10">

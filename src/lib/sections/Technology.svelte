@@ -4,7 +4,7 @@
 
 <div class="bg-primary-500">
 	<div
-		class="h-full flex sm:flex-col md:flex-col sm:px-5 sm:pt-32 pt-40 pb-40 mx-auto lg:px-40 md:px-10"
+		class="h-full flex sm:flex-col md:flex-col sm:px-10 sm:pt-32 pt-40 pb-40 mx-auto lg:px-40 md:px-10"
 		style="max-width:2500px"
 	>
 		<div class="flex flex-col w-4/5 sm:w-full md:w-4/5 h-full md:pb-32 md:mx-auto">
@@ -13,7 +13,7 @@
 			</div>
 
 			<div class="infotext flex items-start sm:pb-32">
-				<p class="text-white sm:text-center">
+				<p class="text-white">
 					We primarily leverage Sentinel-2 imagery, accessible through SentinelHub, as our core data source. This
 					resource offers a remarkable spectral resolution, spanning 13 distinct bandwidths from visible to infrared.
 					Our approach is grounded in the latest open-source scientific publications, sharing their findings through
