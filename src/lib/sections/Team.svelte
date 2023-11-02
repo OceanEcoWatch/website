@@ -69,7 +69,7 @@
 
 {#if width >= 1600}
 	<div class="bg-white py-48">
-		<div class="mx-auto px-40" style="max-width:3000px">
+		<div class="mx-auto px-40" style="max-width:2500px">
 			<h1 class="font-bold text-black text-3xl mb-10 sm:text-center pb-20">SEA THE TEAM</h1>
 			<div class="hide-scrollbar flex flex-row justify-between items-center">
 				{#each teamMembers as member}

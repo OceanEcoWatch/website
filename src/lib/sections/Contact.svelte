@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-primary-500">
-	<div class="w-full sm:px-10 pt-32 pb-10 mx-auto lg:px-40 md:px-20" style="max-width:3000px">
+	<div class="w-full sm:px-10 pt-32 pb-10 mx-auto lg:px-40 md:px-20" style="max-width:2500px">
 		<div class="flex sm:flex-col">
 			<div class="w-1/2 sm:w-full">
 				<h1 class="text-3xl text-white pb-20 sm:text-center" style="font-weight: 500">
