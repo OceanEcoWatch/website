@@ -16,9 +16,9 @@
 				<p class="text-white sm:text-center">
 					We primarily leverage Sentinel-2 imagery, accessible through SentinelHub, as our core data source. This
 					resource offers a remarkable spectral resolution, spanning 13 distinct bandwidths from visible to infrared.
-					Our approach is grounded in the latest open-source scientific publications, which have shared their findings
-					through open-source models. Within these models, neural networks, notably the Unet++ model, excel at
-					discerning the unique reflection and absorption patterns of plastic and marine debris in contrast to water.
+					Our approach is grounded in the latest open-source scientific publications, sharing their findings through
+					open-source models. Within these models, neural networks, notably the Unet++ model, excel at discerning the
+					unique reflection and absorption patterns of plastic and marine debris in contrast to water.
 				</p>
 			</div>
 		</div>

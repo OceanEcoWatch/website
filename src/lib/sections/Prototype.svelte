@@ -28,7 +28,7 @@
 			<div class="w-3/4 max-w-[1000px]">
 				<h1 class="text-white text-3xl sm:text-3xl" style="font-weight: 500">OCEAN ECO WATCH PROTOTYPE</h1>
 				<p class="text-white mt-10">
-					We've built a small prototype to detect marine debris on the coast of Durban located in South Africa where a
+					We've built a small prototype to detect marine debris on the coast of Durban located in South Africa, where a
 					flood event on the 18th of April in 2019 washed out a lot of plastic. We are using data from the sentinel-2
 					satellite taken six days post-event. Our prototype highlights potential locations of floating plastic. Each
 					point on the map corresponds to the probability of present marine debris and represents an area spanning 10x10

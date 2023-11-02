@@ -24,7 +24,8 @@
 						</span>
 						<span class="flex-auto">
 							<p class="">
-								Shocking as it may be, up to <span class="font-bold">80% of all marine debris consists of plastic</span>
+								Shocking as it may be, up to <span class="font-bold">80% of all marine debris consists of plastic,</span
+								>
 								an insidious invader of our planet’s most vital habitats.
 							</p>
 						</span>
@@ -39,9 +40,9 @@
 						<span class="flex-auto"
 							><p class="">
 								Disturbingly, <span class="font-bold"
-									>the bulk of this plastic threat (80%) lies in our coastal zones</span
+									>the bulk of this plastic threat (80%) lies in our coastal zones,</span
 								>
-								endangering marine life and corroding the very essence of our oceans.
+								endangering marine life and corrupting the very essence of our oceans.
 							</p></span
 						>
 					</li>
@@ -54,9 +55,9 @@
 						>
 						<span class="flex-auto"
 							><p class="">
-								The time for change is now, we want to help cleanup NGOs to make their operations more effective with
-								accurate, real-time data on floating plastic debris in coastal regions, and thus play a small part in
-								the fight against plastic pollution.
+								The time for change is now. We want to help cleanup NGOs to make their operations more effective with
+								accurate, real-time data on floating plastic debris in coastal regions and thus play a small part in the
+								fight against plastic pollution.
 							</p></span
 						>
 					</li>

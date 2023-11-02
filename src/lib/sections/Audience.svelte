@@ -9,7 +9,7 @@
 			altText: 'Magnifying Glass',
 			title: 'For The Public',
 			description:
-				'We visualise plastic pollution across the oceans, make abstract numbers easier to grasp and educate the public about the marine pollution threat.'
+				'We visualise plastic pollution across the oceans, make abstract numbers more straightforward to grasp and educate the public about the marine pollution threat.'
 		},
 		{
 			icon: ngoIcon,
@@ -23,7 +23,7 @@
 			altText: 'Database Icon',
 			title: 'For Researchers',
 			description:
-				'We offer in-depth data insights to dissect the origins, trajectories, and destinations of marine plastics laying the foundation for predictive analytics on future plastic accumulations.'
+				'We offer in-depth data insights to dissect the origins, trajectories, and destinations of marine plastics, laying the foundation for predictive analytics on future plastic accumulations.'
 		}
 	];
 </script>
