@@ -15,10 +15,12 @@ export default {
 			sm: { min: '0px', max: '767px' },
 			// => @media (min-width: 640px and max-width: 767px) { ... }
 
-			md: { min: '768px', max: '1023px' },
+			md: { min: '768px', max: '1750px' },
 			// => @media (min-width: 768px and max-width: 1023px) { ... }
+			
+			md2: { min: '768px', max: '1250px' },
 
-			lg: { min: '1024px', max: '10000px' },
+			lg: { min: '1750px', max: '10000px' },
 			// => @media (min-width: 1024px and max-width: 1279px) { ... }
 		},
 

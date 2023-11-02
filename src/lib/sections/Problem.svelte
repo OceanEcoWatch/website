@@ -3,7 +3,7 @@
 		<div class="w-1/2 sm:w-4/5 md:w-full text-center text-4xl text-white font-bold lg:px-10">
 			<h1>Plastic pollution threatens the ecosystem, the economy, and human health!</h1>
 		</div>
-		<div class="w-4/5 flex md:flex-col sm:flex-col sm:space-y-20 md:space-y-10 justify-between mt-28 lg:pt-10">
+		<div class="w-4/5 flex md:flex-col sm:flex-col sm:space-y-20 md:space-y-32 justify-between mt-28 lg:pt-10">
 			<div class="w-1/4 sm:w-full md:w-full sm:pb-5">
 				<p class="text-white text-center">
 					<span class="text-tertiary-500 font-bold text-5xl sm:text-4xl">In 2050</span>

@@ -5,6 +5,7 @@
 	import Tom from '$assets/people/Tom.png';
 	import githubIcon from '$assets/icons/githubIcon.svg';
 	import linkedinIcon from '$assets/icons/linkedinIcon.svg';
+	import { onMount } from 'svelte';
 
 	const teamMembers = [
 		{
@@ -49,41 +50,138 @@
 			window.open(link, '_blank');
 		}
 	}
+	let width = 0;
+	onMount(() => {
+		width = window.innerWidth;
+		console.log(width);
+		const handleResize = () => {
+			width = window.innerWidth;
+			console.log(width);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	});
 </script>
 
-<div class="bg-white hide-scrollbar flex flex-col items-center p-20 py-40 sm:px-5">
-	<div class="w-full flex flex-col items-center mb-10">
-		<h1 class="text-3xl text-primary-500 pb-20" style="font-weight: 500">SEA THE TEAM</h1>
-	</div>
+{#if width >= 1600}
+	<div class="bg-white py-48">
+		<div class="mx-auto px-40" style="max-width:3000px">
+			<h1 class="font-bold text-black text-3xl mb-10 sm:text-center pb-20">SEA THE TEAM</h1>
+			<div class="hide-scrollbar flex flex-row justify-between items-center">
+				{#each teamMembers as member}
+					<div class="flex flex-col">
+						<div class="rounded-lg shadow-2xl w-[300px] h-[300px] relative bg-black">
+							<img
+								class="rounded-lg w-full h-full object-cover"
+								src={member.image}
+								alt={`portrait of ${member.name}`}
+							/>
+							<div class="space-x-2 absolute left-2 bottom-2">
+								{#if member.links.github}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.github)}>
+										<img alt="github" src={githubIcon} />
+									</button>
+								{/if}
+								{#if member.links.linkedin}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.linkedin)}>
+										<img alt="linkedin" src={linkedinIcon} />
+									</button>
+								{/if}
+							</div>
+						</div>
 
-	<div class="flex sm:flex-col sm:items-center sm:space-y-10 md:space-x-10 lg:space-x-20 pl-5 pr-5">
-		{#each teamMembers as member}
-			<div class="flex flex-col">
-				<div class="rounded-lg shadow-2xl w-[300px] h-[300px] relative bg-black mx-10">
-					<img
-						class="pt-8 rounded-lg w-full h-full object-cover"
-						src={member.image}
-						alt={`portrait of ${member.name}`}
-					/>
-					<div class="left-4 space-x-2 absolute left-2 bottom-2">
-						{#if member.links.github}
-							<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.github)}
-								><img alt="github" src={githubIcon} /></button
-							>
-						{/if}
-						{#if member.links.linkedin}
-							<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.linkedin)}
-								><img alt="linkedin" src={linkedinIcon} /></button
-							>
-						{/if}
+						<div class="mt-5">
+							<h1 class="font-bold text-2xl text-center">{member.name}</h1>
+							<p class="text-center">{member.role}</p>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</div>
+{/if}
+
+{#if width < 1600 && width >= 780}
+	<div class="bg-white hide-scrollbar mx-auto py-40 px-20">
+		<h1 class="font-bold text-black text-3xl mb-10 text-center pb-20">SEA THE TEAM</h1>
+		<!-- Set max-width to contain 2 items with 300px each and gap -->
+		<div class="grid grid-cols-2">
+			<!-- Create a 2-column grid with some gap -->
+			{#each teamMembers as member}
+				<div class="flex justify-center pb-20">
+					<div class="flex flex-col items-center">
+						<!-- this is a new wrapper div -->
+						<div class="rounded-lg shadow-2xl w-[300px] h-[300px] relative bg-black">
+							<img
+								class="rounded-lg w-full h-full object-cover object-center"
+								src={member.image}
+								alt={`portrait of ${member.name}`}
+							/>
+							<div class="space-x-2 absolute left-2 bottom-2">
+								{#if member.links.github}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.github)}>
+										<img alt="github" src={githubIcon} />
+									</button>
+								{/if}
+								{#if member.links.linkedin}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.linkedin)}>
+										<img alt="linkedin" src={linkedinIcon} />
+									</button>
+								{/if}
+							</div>
+						</div>
+
+						<div class="mt-5 text-center">
+							<!-- added text-center to this div -->
+							<h1 class="font-bold text-2xl">{member.name}</h1>
+							<p>{member.role}</p>
+						</div>
 					</div>
 				</div>
-
-				<div class="mt-5 mx-10">
-					<h1 class="font-bold text-2xl">{member.name}</h1>
-					<p>{member.role}</p>
-				</div>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
-</div>
+{/if}
+
+{#if width < 780}
+	<div class="bg-white hide-scrollbar mx-auto py-40 px-10">
+		<h1 class="font-bold text-black text-3xl mb-10 text-center pb-20">SEA THE TEAM</h1>
+		<!-- Set max-width to contain 2 items with 300px each and gap -->
+		<!-- Create a 2-column grid with some gap -->
+		<ul>
+			{#each teamMembers as member}
+				<li>
+					<div class="flex flex-col items-center pb-40">
+						<div class="rounded-lg shadow-2xl w-[300px] h-[300px] relative bg-black">
+							<img
+								class="rounded-lg w-full h-full object-cover object-center"
+								src={member.image}
+								alt={`portrait of ${member.name}`}
+							/>
+							<div class="space-x-2 absolute left-2 bottom-2">
+								{#if member.links.github}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.github)}>
+										<img alt="github" src={githubIcon} />
+									</button>
+								{/if}
+								{#if member.links.linkedin}
+									<button type="button" class="btn-icon bg-white" on:click={() => redirect(member.links.linkedin)}>
+										<img alt="linkedin" src={linkedinIcon} />
+									</button>
+								{/if}
+							</div>
+							<div class="mt-5">
+								<h1 class="font-bold text-2xl">{member.name}</h1>
+								<p class="">{member.role}</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			{/each}
+		</ul>
+	</div>
+{/if}

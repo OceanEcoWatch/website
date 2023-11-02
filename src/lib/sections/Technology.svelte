@@ -2,9 +2,9 @@
 	import graph from '$assets/images/graph.png';
 </script>
 
-<div class="bg-primary-500">
-	<div class="flex sm:flex-col sm:px-5 sm:pt-320 py-40 mx-auto lg:px-40" style="max-width:3000px">
-		<div class="flex flex-col w-2/5 sm:w-full h-full lg:pr-40">
+<div class="lg:bg-primary-500">
+	<div class="flex sm:flex-col sm:px-5 sm:pt-320 py-40 mx-auto lg:px-44 md:px-20" style="max-width:3000px">
+		<div class="flex flex-col w-2/5 sm:w-full h-full md:pr-0 lg:pr-20">
 			<h1 class="font-bold text-white text-3xl mb-10 sm:text-center">HOW THE DETECTION WORKS</h1>
 
 			<p class="text-white sm:text-center">
@@ -23,17 +23,17 @@
 					alt="statistic that shows the increase of plastic in our oceans by year and weight"
 				/>
 				<div class="mt-5">
-					<p class="text-white sm:text-small">
+					<p class="text-white text-base">
 						Variations in remote sensing reflectance across different materials at various wavelengths.
 					</p>
+
 					<div class="flex space-x-3 sm:mt-3">
-						<p class="text-white sm:text-small">Source:</p>
 						<a
-							class="anchor text-white sm:text-small"
+							class="anchor text-white text-base"
 							tabindex="0"
 							href="https://www.nature.com/articles/s41598-020-62298-z"
 						>
-							Finding Plastic Patches in Coastal Waters using Optical Satellite Data
+							Source: Finding Plastic Patches in Coastal Waters using Optical Satellite Data
 						</a>
 					</div>
 				</div>

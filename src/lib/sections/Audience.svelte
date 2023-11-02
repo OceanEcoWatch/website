@@ -28,18 +28,20 @@
 	];
 </script>
 
-<div class=" bg-primary-500">
+<div class="bg-primary-500">
 	<div
 		class="w-full flex flex-col items-center lg:py-32 md:py-48 sm:py-24 md:p-30 sm:px-5 mx-auto"
 		style="max-width:3000px"
 	>
-		<div class="sm:w-full lg:w-4/5 bg-primary-500 pl-20 pr-20 flex sm:flex-col justify-between">
+		<div
+			class="sm:w-full md2:w-full lg:w-4/5 bg-primary-500 pl-20 pr-20 flex lg:flex-row md2:flex-col sm:flex-col justify-between"
+		>
 			{#each sections as section}
-				<div class="flex flex-col items-center p-5 sm:mb-20">
+				<div class="flex flex-col items-center p-5 sm:mb-20 md2:py-20">
 					<div class="py-10">
 						<img src={section.icon} alt={section.altText} />
 					</div>
-					<div class="w-[360px] sm:w-[250px]">
+					<div class="w-[360px] sm:w-[250px] md2:w-[550px]">
 						<h1 class="text-3xl text-center text-tertiary-500 font-bold py-3">
 							{section.title}
 						</h1>

@@ -14,8 +14,8 @@
 
 		<div class="w-2/3 h-[4px] bg-secondary-500 mt-20" />
 
-		<h1 class="text-4xl sm:text-2xl sm:w-2/5 text-secondary-500 mt-20 sm:mt-5" style="font-weight: 500">
-			REAL-TIME MAPPING OF PRESENT <br />MARINE DEBRIS BY LEVERAGING <br />SATELLITE IMAGERY
+		<h1 class="text-4xl sm:text-2xl sm:w-2/5 max-w-[700px] text-secondary-500 mt-20 sm:mt-5" style="font-weight: 500">
+			REAL-TIME MAPPING OF PRESENT MARINE DEBRIS BY LEVERAGING SATELLITE IMAGERY
 		</h1>
 
 		<button
