@@ -1,4 +1,4 @@
-<div class="sm:w-[100px] flex md:flex-col lg:flex-col items-center bg-white card p-2">
+<div class="sm:w-[50px] flex md:flex-col lg:flex-col items-center bg-white card p-2">
 	<div class="flex sm:flex-col sm:space-x-0 md:space-x-5 lg:space-x-5 mb-2">
 		<div>
 			<p class="text-black">10%</p>
@@ -39,8 +39,6 @@
 	</div>
 
 	<div class="sm:h-[250px] sm:w-[42px] text-center">
-		<p class="sm:rotate-90 sm:whitespace-nowrap sm:origin-top-left ml-10 mt-30">
-			probabilty of present marine debris
-		</p>
+		<p class="sm:rotate-90 sm:whitespace-nowrap sm:origin-top-left ml-10 mt-30">probabilty of present marine debris</p>
 	</div>
 </div>
