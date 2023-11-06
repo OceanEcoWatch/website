@@ -8,7 +8,7 @@ services:
     networks:
       - traefik
     ports:
-      - 4000:4000
+      - 3000:4000
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=4000'
