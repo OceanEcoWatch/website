@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: ocean-eco-watch
+    build: .
+    restart: always
+    networks:
+      - traefik
+    ports:
+      - 4000:3000
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=3000'
+      - 'traefik.http.routers.cypher-ceo.rule=Host(`www.oceanecowatch.org`)'
+      - 'traefik.http.routers.cypher-ceo.entrypoints=websecure'
+      - 'traefik.http.routers.cypher-ceo.tls.certresolver=letsencrypt'
+networks:
+  traefik:
+    external: true

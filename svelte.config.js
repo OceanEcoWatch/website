@@ -1,4 +1,5 @@
-import adapter from '@zugriff/adapter-sveltekit';
+//import adapter from '@zugriff/adapter-sveltekit';
+import adapter from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { SassAlias } from 'svelte-preprocess-sass-alias-import';
 import path from 'path';
@@ -29,3 +30,7 @@ const config = {
 	}
 };
 export default config;
+
+
+
+
