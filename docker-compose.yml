@@ -8,10 +8,10 @@ services:
     networks:
       - traefik
     ports:
-      - 3000:4000
+      - 3000:3002
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=4000'
+      - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=3002'
       - 'traefik.http.routers.cypher-ceo.rule=Host(`www.oceanecowatch.org`)'
       - 'traefik.http.routers.cypher-ceo.entrypoints=websecure'
       - 'traefik.http.routers.cypher-ceo.tls.certresolver=letsencrypt'
