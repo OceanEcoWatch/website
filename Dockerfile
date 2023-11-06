@@ -8,6 +8,8 @@ RUN npm ci
 
 COPY /static /app/static
 
+COPY postcss.config.cjs /app/
+COPY tailwind.config.ts /app/
 COPY svelte.config.js /app/
 COPY vite.config.ts /app/
 COPY tsconfig.json /app/
