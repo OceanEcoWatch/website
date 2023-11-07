@@ -12,7 +12,7 @@ services:
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.services.oceanecowatch-org.loadbalancer.server.port=3000'
-      - 'traefik.http.routers.oceanecowatch-org.rule=Host(`oceanecowatch.org`) || Host(www.oceanecowatch.org)'
+      - 'traefik.http.routers.oceanecowatch-org.rule=Host(`oceanecowatch.org`) || Host(`www.oceanecowatch.org`)'
       - 'traefik.http.routers.oceanecowatch-org.entrypoints=websecure'
       - 'traefik.http.routers.oceanecowatch-org.tls.certresolver=letsencrypt'
 networks:
