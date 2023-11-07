@@ -11,7 +11,7 @@ services:
       - 3002:3000
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=3002'
+      - 'traefik.http.services.cypher-ceo.loadbalancer.server.port=3000'
       - 'traefik.http.routers.cypher-ceo.rule=Host(`oceanecowatch.org`) || Host(www.oceanecowatch.org)'
       - 'traefik.http.routers.cypher-ceo.entrypoints=websecure'
       - 'traefik.http.routers.cypher-ceo.tls.certresolver=letsencrypt'
